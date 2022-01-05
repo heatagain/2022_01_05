@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tr1 {
+            background-color: gray;
+            height: 50px;
+        }
+        #tr2 {
+            background-color: whitesmoke;
+            height: 35px;
+        }
+        .tr3{
+            text-align: left;
+        }
+        .tr4{
+            text-align: right;
+        }
+        #table{
+            width: 400px;
+        }
+        .td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <table #table>
+            <tr id="tr1">
+                <th class = "tr3" colspan="2">Step 1. 아이디/비번 입력</th>
+          </tr>
+
+          <tr id="tr2">
+            <td class = "tr4">아이디 :</td>
+            <td>
+                <input type="text" name = "id">
+            </td>
+        </tr>
+
+        <tr id="tr2">
+            <td class = "tr4">비밀번호 :</td>
+            <td>
+                <input type="password" name = "pw">
+            </td>
+        </tr>
+
+        <tr id="tr2">
+            <td class = "tr4">비밀번호 확인 :</td>
+            <td>
+                <input type="password" name = "pw2">
+            </td>
+        </tr>
+
+        <tr id="tr1">
+            <th class = "tr3" colspan="2">Step 2. 개인정보</th>
+        </tr>
+        <tr id="tr2">
+            <td class = "tr4">성별 :</td>
+            <td>
+                남<input type="radio" name = "gender" value="man">
+                여<input type="radio" name = "gender" value="women">
+            </td>
+        </tr>
+        <tr id="tr2">
+            <td class = "tr4">혈액형 :</td>
+               <td>
+                <select>
+                    <option value="A">A형</option>
+                    <option value="B">B형</option>
+                    <option value="AB">AB형</option>
+                    <option value="O">O형</option>
+                </select>
+            </td>
+        </tr>
+        <tr id="tr2">
+            <td class = "tr4">생일 :</td>
+            <td>
+                <input type="date"/>
+            </td>
+        </tr>
+
+        <tr id="tr1">
+            <th class = "tr3" colspan="2">Step 3. 선호도</th>
+        </tr>
+        <tr id="tr2">
+            <td class = "tr4">취미 :</td>
+            <td>
+                축구<input type="checkbox" name = "ho" value="sc">
+                야구<input type="checkbox" name = "ho" value="bs">
+                농구<input type="checkbox" name = "ho" value="bk">
+            </td>
+        </tr>
+        <tr id="tr2">
+            <td class = "tr4">좋아하는 색깔 :</td>
+            <td>
+                <input type="color"/>
+            </td>
+        </tr>
+
+        <tr id="tr1">
+            <th class = "tr3" colspan="2">Step 4. 적고 싶은 말</th>
+        </tr>
+        <tr id="tr2">
+            <td colspan = "2">
+                <textarea cols = "60" rows = "5"></textarea>
+            </td>
+        </tr>
+
+        <tr id="tr2">
+            <td class = "td" colspan = "2">
+                <input type="submit"/>
+                <input type="reset"/>
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
